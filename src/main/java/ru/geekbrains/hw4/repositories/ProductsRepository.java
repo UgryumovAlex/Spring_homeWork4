@@ -22,17 +22,17 @@ public class ProductsRepository {
 
         Product p1 = new Product();
         p1.setId(id++);
-        p1.setTitle("Холодильник");
+        p1.setTitle("Freezer");
         p1.setCost(50000);
 
         Product p2 = new Product();
         p2.setId(id++);
-        p2.setTitle("Телевизор");
+        p2.setTitle("TVset");
         p2.setCost(60000);
 
         Product p3 = new Product();
         p3.setId(id++);
-        p3.setTitle("Стиральная машина");
+        p3.setTitle("Washing machine");
         p3.setCost(70000);
 
         products.put(p1.getId(), p1 );

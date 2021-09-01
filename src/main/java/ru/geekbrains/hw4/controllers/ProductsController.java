@@ -1,14 +1,11 @@
 package ru.geekbrains.hw4.controllers;
 
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import ru.geekbrains.hw4.entities.Product;
 import ru.geekbrains.hw4.services.ProductsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -48,4 +45,5 @@ public class ProductsController {
         productsService.addProduct(product);
         return "newProductAdded";
     }
+
 }
